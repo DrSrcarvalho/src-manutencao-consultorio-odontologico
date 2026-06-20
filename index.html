@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -9,9 +10,40 @@
     <meta property="og:title" content="SRC TEC ODONTO - Sebastião Carvalho" />
     <meta property="og:description" content="Manutenção preventiva e corretiva em equipamentos odontológicos. Atendo Rio Preto, Votuporanga, Fernandópolis e região. Agende já!" />
     <meta property="og:image" content="https://placehold.co/1200x630/00A3FF/FFFFFF?text=SRC+TEC+ODONTO" />
-    <meta property="og:url" content="https://www.srctecodonto.com.br" />
+    <meta property="og:url" content="https://srctecodonto.com.br" />
     <meta property="og:type" content="website" />
     <meta name="description" content="Técnico em equipamentos odontológicos em São José do Rio Preto e região. Conserto de cadeiras, autoclaves, canetas de alta rotação e mais." />
+
+    <!-- FAVICON -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%2300A3FF'/%3E%3Ctext x='50' y='68' font-size='55' font-family='Arial, sans-serif' font-weight='900' fill='white' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+
+    <!-- DADOS ESTRUTURADOS (SEO LOCAL) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "SRC TEC ODONTO - Sebastião Carvalho",
+      "image": "https://placehold.co/1200x630/00A3FF/FFFFFF?text=SRC+TEC+ODONTO",
+      "telephone": "+5517996626667",
+      "url": "https://srctecodonto.com.br",
+      "description": "Técnico especializado em manutenção preventiva e corretiva de equipamentos odontológicos: cadeiras, autoclaves, canetas de alta e baixa rotação e compressores.",
+      "areaServed": [
+        { "@type": "City", "name": "São José do Rio Preto" },
+        { "@type": "City", "name": "Cardoso" },
+        { "@type": "City", "name": "Américo de Campos" },
+        { "@type": "City", "name": "Votuporanga" },
+        { "@type": "City", "name": "Rolândia" },
+        { "@type": "City", "name": "Fernandópolis" },
+        { "@type": "City", "name": "Mirassol" }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "priceRange": "$$"
+    }
+    </script>
 
     <!-- Google Fonts + Font Awesome -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
@@ -68,16 +100,16 @@
             border-bottom: 2px solid #EEF2F6;
         }
 
-        .logo h1 {
+        .logo .logo-text {
             font-size: 28px;
             font-weight: 900;
             letter-spacing: -1px;
             color: #1A1A1A;
         }
-        .logo h1 span.blue { color: #00A3FF; }
-        .logo h1 span.yellow { color: #FFD100; }
-        .logo h1 span.red { color: #FF2A00; }
-        .logo h1 span.white { color: #333; }
+        .logo .logo-text span.blue { color: #00A3FF; }
+        .logo .logo-text span.yellow { color: #FFD100; }
+        .logo .logo-text span.red { color: #FF2A00; }
+        .logo .logo-text span.white { color: #333; }
 
         .logo .sub-brand {
             font-size: 14px;
@@ -126,15 +158,15 @@
             text-transform: uppercase;
         }
 
-        .hero h2 {
+        .hero h1 {
             font-size: 48px;
             font-weight: 900;
             line-height: 1.1;
             color: #1A1A1A;
         }
-        .hero h2 .highlight-blue { color: #00A3FF; }
-        .hero h2 .highlight-yellow { color: #FFD100; }
-        .hero h2 .highlight-red { color: #FF2A00; }
+        .hero h1 .highlight-blue { color: #00A3FF; }
+        .hero h1 .highlight-yellow { color: #FFD100; }
+        .hero h1 .highlight-red { color: #FF2A00; }
 
         .hero p {
             font-size: 20px;
@@ -565,7 +597,7 @@
         @media (max-width: 700px) {
             .container { padding: 25px 20px; }
             .header { flex-direction: column; align-items: start; gap: 15px; }
-            .hero h2 { font-size: 32px; }
+            .hero h1 { font-size: 32px; }
             .hero .phone-big { font-size: 22px; padding: 12px 18px; }
             .services-grid { grid-template-columns: 1fr 1fr; }
             .testimonials-grid { grid-template-columns: 1fr; }
@@ -583,7 +615,7 @@
         @media (max-width: 450px) {
             .services-grid { grid-template-columns: 1fr; }
             .cidades-grid { grid-template-columns: 1fr; }
-            .logo h1 { font-size: 22px; }
+            .logo .logo-text { font-size: 22px; }
         }
     </style>
 </head>
@@ -601,11 +633,11 @@
         <!-- HEADER -->
         <div class="header">
             <div class="logo">
-                <h1>
+                <p class="logo-text">
                     <span class="blue">SRC</span>
                     <span class="white">TEC</span>
                     <span class="yellow">ODONTO</span>
-                </h1>
+                </p>
                 <div class="sub-brand">📍 Assistência Técnica Especializada</div>
             </div>
             <div class="contact-header">
@@ -616,10 +648,13 @@
         <!-- HERO -->
         <div class="hero">
             <span class="badge"><i class="fas fa-bolt" style="margin-right:6px;"></i> Técnico em Equipamentos Odontológicos</span>
-            <h2>
+            <h1>
                 <span class="highlight-blue">Sebastião</span> 
                 <span class="highlight-yellow">Carvalho</span>
-            </h2>
+            </h1>
+            <p style="font-weight:700; color:#003366; font-size:18px; margin-top:-8px;">
+                Técnico em Equipamentos Odontológicos em São José do Rio Preto e Região
+            </p>
             <p>
                 Manutenção preventiva e corretiva em cadeiras, autoclaves, canetas de alta rotação, 
                 compressores e todos os equipamentos do seu consultório.
